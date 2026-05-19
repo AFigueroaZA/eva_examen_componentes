@@ -1,0 +1,14 @@
+node_modules
+dist
+www
+platforms
+plugins
+resources
+.env
+.env.local
+.playwright-mcp
+tmp
+.DS_Store
+npm-debug.log*
+*.apk
+*.aab

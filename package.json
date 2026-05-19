@@ -1,0 +1,37 @@
+{
+  "name": "eva-examen-componentes",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "test": "node --test",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "build:mobile": "vite build --outDir www --emptyOutDir",
+    "mobile:add-android": "cordova platform add android",
+    "mobile:prepare": "npm run build:mobile && cordova prepare android",
+    "mobile:build-debug": "npm run build:mobile && cordova build android",
+    "mobile:build-release": "npm run build:mobile && cordova build android --release"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "firebase": "^12.0.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "simple-react-validator": "^1.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "cordova": "^12.0.0",
+    "cordova-android": "^15.0.0",
+    "vite": "^7.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  }
+}
